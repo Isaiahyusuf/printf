@@ -26,7 +26,6 @@
  */
 struct fmt
 {
-<<<<<<< HEAD
 	char fmt;
 	int (*fn)(va_list, char[], int, int, int, int);
 };
@@ -40,12 +39,11 @@ struct fmt
  */
 typedef struct fmt fmt_t;
 
-=======
 	char *type_arg;
 	int (*f)(va_list, char *, unsigned int);
 } 
 	print_t;
->>>>>>> 9296ab8 (task)
+
 int _printf(const char *format, ...);
 int handle_print(const char *fmt, int *i,
 va_list list, char buffer[], int flags, int width, int precision, int size);
@@ -122,7 +120,3 @@ long int convert_size_number(long int num, int size);
 long int convert_size_unsgnd(unsigned long int num, int size);
 
 #endif /* MAIN_H */
-<<<<<<< HEAD
-
-=======
->>>>>>> f826aafcaba055c2f24170e3e572f53b89e0ef29
